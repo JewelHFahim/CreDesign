@@ -1,0 +1,119 @@
+:root {
+  --blue-gray-50: #eceff1;
+  --blue-gray-100: #cfd8dc;
+  --blue-gray-200: #b0bec5;
+  --blue-gray-300: #90a4ae;
+  --blue-gray-400: #78909c;
+  --blue-gray-500: #607d8b;
+  --blue-gray-600: #546e7a;
+  --blue-gray-700: #455a64;
+  --blue-gray-800: #37474f;
+  --blue-gray-900: #263238;
+  --transition-timing: 0.25s;
+  --transition-timing-function: linear;
+}
+
+.navbar {
+  background: #fff3ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* All */
+.navbar-menu a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  background: white;
+}
+
+/* Top-level */
+.navbar > .navbar-menu > li > a {
+  display: inline-block;
+  color: black;
+  background: transparent;
+  transition: background var(--transition-timing)
+      var(--transition-timing-function),
+    color var(--transition-timing) var(--transition-timing-function);
+}
+
+.navbar > .navbar-menu > li > a:hover,
+.navbar > .navbar-menu > li > a:focus {
+  background: transparent;
+  color: orangered;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu,
+.navbar-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Nested */
+.navbar-menu ul {
+  position: absolute;
+  left: 0;
+  top: 115%;
+  visibility: hidden;
+  opacity: 0;
+  width: 13rem;
+  box-shadow: 0 0.25rem 1.5rem hsla(200, 19%, 18%, 0.05);
+  transition: visibility 0s var(--transition-timing-function) var(--transition-timing),
+  opacity var(--transition-timing) var(--transition-timing-function);
+}
+
+.navbar-menu ul a {
+  color: var(--blue-gray-600);
+  transition: background var(--transition-timing) var(--transition-timing-function),
+  color var(--transition-timing) var(--transition-timing-function);
+  border-bottom: .5px solid rgb(244, 242, 242);
+}
+
+.navbar-menu ul a:hover,
+.navbar-menu ul a:focus {
+  color: orangered;
+}
+
+.navbar-menu ul > li > ul {
+  left: 100%;
+  top: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+/* 
+    HACK: Prevents box shadow from child dropdowns
+    from overlapping its parent dropdown
+*/
+
+.navbar-menu li.has-children > a {
+  position: relative;
+}
+
+.navbar-menu li.has-children > a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1rem;
+  background: inherit;
+  z-index: 999;
+}
+/* ENDHACK */
+
+.navbar-menu li:hover > ul,
+.navbar-menu li:focus-within > ul /* IE11+ only */ {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
