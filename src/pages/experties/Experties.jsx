@@ -6,11 +6,11 @@ import { SlSocialDribbble } from "react-icons/sl";
 
 const Experties = () => {
 
-const [state, setState] = useState(false)
-  const handleActive = () =>{
-    setState(!state)
+const [state, setState] = useState(1)
+  const handleActive = (index) =>{
+    setState(index)
   }
-
+console.log(state)
 
   return (
     <div className="bg-[#fff3ea] p-[120px]">
@@ -40,9 +40,10 @@ const [state, setState] = useState(false)
         <div className="w-[55%]">
 
           <div className="border border-orange-500 rounded-md flex items-center gap-5 p-2">
-            <button onClick={()=>handleActive()} className={`border w-full py-2 text-lg text-center bg-orange-500 rounded-md font-medium text-white ${state ? "bg-white text-blue-500" : ""}`}>Professional</button>
+            <button onClick={()=>handleActive(1)} className={`border w-full py-2 text-lg text-center rounded-md font-medium  
+            ${state === 1 ? "bg-orange-500  text-white" : "bg-white text-black"}`}>Professional</button>
 
-            <button onClick={()=>handleActive()} className={`border w-full py-2 text-lg text-center bg-orange-500 rounded-md font-medium text-white ${!state ? "bg-white text-blue-500" : ""}`}>Professional</button>
+            <button onClick={()=>handleActive(2)} className={`border w-full py-2 text-lg text-center bg-orange-500 rounded-md font-medium ${state === 2 ? "bg-orange-500  text-white" : "bg-white text-black"}`}>Professional</button>
           </div>
 
           <div className="mt-[110px] flex flex-col gap-10">
