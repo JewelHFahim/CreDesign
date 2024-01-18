@@ -1,0 +1,50 @@
+.list-step-numbers {
+    counter-reset: step;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+
+.list-step-numbers li {
+    position: relative;
+    padding: 0 0 1.5rem 3.75rem;
+    min-height: 75px;
+    border-left: 2px solid #333;
+}
+
+
+.list-step-numbers li::before {
+    counter-increment: step;
+    content: counters(step, ".") " ";
+    position: absolute;
+    left: -26px;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: #f60;
+    border: 2px solid #333;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+.list-step-numbers li:last-child {
+    border-left: none;
+}
+
+
+.list-step-numbers li:last-child::before {
+    content: '\2713';
+}
+
+
+@media all and (max-width: 768px) {
+    .list-step-numbers li {
+        padding-left: 2.5rem;
+   }
+}

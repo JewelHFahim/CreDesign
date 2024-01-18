@@ -1,3 +1,4 @@
+import MainSlider from "../../components/slider/MainSlider";
 import AboutUs from "../aboute-us/AboutUs";
 import GSGlobalBanner from "../banner-gs-global/GSGlobalBanner";
 import BannerPage from "../banner-page/BannerPage";
@@ -12,18 +13,26 @@ import ServicesSlide from "../service-slide/ServicesSlide";
 import SoftwareSolutions from "../software-solutions/SoftwareSolutions";
 import Testimonial from "../testimonial/Testimonial";
 import WelcomePage from "../welcome-page/WelcomePage";
+import OurPartner from "./our-partner/OurPartner";
+import Services from "./services/Services";
+import TechnologyStack from "./technology-stack/TechnologyStack";
 
 const Home = () => {
   return (
     <div>
-      
-      <WelcomePage />
-      <BannerPage/>
-      <GSGlobalBanner/>
+      <MainSlider />
+      <div className="border boder-red-600 px-[120px]">
+        <Services />
+        <TechnologyStack />
+        <OurPartner/>
+        <Blog />
+      </div>
+
+      {/* <WelcomePage />
+      <BannerPage />
+      <GSGlobalBanner />
       <OurSoftwareSolutions />
-
       <SoftwareSolutions />
-
       <AboutUs />
       <PriceList />
       <OurServices />
@@ -31,7 +40,9 @@ const Home = () => {
       <Portfolio />
       <Testimonial />
       <ServicesSlide />
-      <Blog />
+      <Blog /> */}
+
+
       <ContactUs />
     </div>
   );

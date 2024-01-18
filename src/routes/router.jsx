@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
 import UserLayout from "../layout/UserLayout";
-import VideoPlayerJW from "../components/navbar/player/JWPlayer";
+import HomePageTwo from "../pages/home-demo-two/HomePageTwo";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +13,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/video-player",
-        element: <VideoPlayerJW />,
+        path: "/home-2",
+        element: <HomePageTwo />,
       },
     ],
   },
