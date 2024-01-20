@@ -1,12 +1,12 @@
 import "./ServicesWeOffer.css";
 
-const ServiceWeOffer = () => {
+const ServiceWeOffer = ({title}) => {
   return (
     <div className="mt-[50px] flex flex-col justify-center items-center gap-y-8">
       
       <div className="flex flex-col justify-center items-center gap-y-4 text-center ">
         <h1 className="text-[44px] font-medium leading-[55px] w-[65%]">
-          Web Application Development Services We Offer
+         {title}
         </h1>
         <p className="w-[65%]">
           We take a personalized approach to creating web applications that

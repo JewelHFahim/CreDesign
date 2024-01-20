@@ -6,12 +6,12 @@ import nodejs from "../../../assets/nodejs.png";
 import laravel from "../../../assets/laravel.png";
 import mongodb from "../../../assets/mongodb.png";
 
-const TechnologyStack = () => {
+const TechnologyStack = ({title}) => {
   return (
     <div className="mt-[50px] bg-white flex flex-col justify-center items-center gap-y-5 border p-8">
 
       <div className="flex flex-col justify-center items-center text-center">
-        <h1 className="text-[25px] font-medium uppercase">Technology Stack</h1>
+        <h1 className="text-[25px] font-medium uppercase">{title}</h1>
         <p className="w-[80%] font-medium">
           Our engineers apprehend your business requirements and help you choose
           the right technology for your solution.
