@@ -14,7 +14,7 @@ const Blog = () => {
     
         <div className="mt-4 lg:mt-8 grid grid-cols-1  lg:grid-cols-3 gap-5">
           {[1, 2, 3].map((item, i) => (
-            <div key={i} className="border rounded-lg flex flex-col justify-center gap-y-3 w-full p-4">
+            <div key={i} className="border-[1.5px] rounded-lg flex flex-col justify-center gap-y-3 w-full p-4 border-slate-400">
               <img src={img1} alt="" className="w-full h-full" />
               <p className="flex items-center justify-between">
                 <span className="uppercase text-orange-500 font-medium text-sm lg:text-[16px]">
