@@ -10,7 +10,7 @@ const MainSlider = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        // spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -26,7 +26,7 @@ const MainSlider = () => {
       >
         {[1, 2, 3, 4].map((item, i) => (
           <SwiperSlide key={i}>
-            <div className="w-full h-[450px]">
+            <div className="w-full lg:h-[450px]">
               <img src={img1} alt="" className="object-cover" />
             </div>
           </SwiperSlide>

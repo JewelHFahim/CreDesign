@@ -30,18 +30,18 @@ const PartnerSlider = () => {
     <>
       <Swiper
         loop={true}
-        spaceBetween={30}
+        // spaceBetween={30}
         slidesPerView={6}
         pagination={false}
         navigation={false}
         centeredSlides={true}
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
-        className="mt-5 flex justify-center items-center"
+        className="lg:mt-5 flex justify-center items-center"
       >
         {datas.map((item, i) => (
           <SwiperSlide key={i}>
-            <div className="w-[150px] h-[150px]">
+            <div className="w-[40px] h-[40px] lg:w-[150px] lg:h-[150px]">
               <img src={item.img} alt="" className="object-cover w-full h-full rounded-full"/>
             </div>
           </SwiperSlide>

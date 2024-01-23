@@ -20,11 +20,13 @@ import TechnologyStack from "./technology-stack/TechnologyStack";
 const Home = () => {
   return (
     <div>
+
       <MainSlider />
-      <div className="border boder-red-600 px-[120px]">
+
+      <div className="px-10 lg:px-[120px]">
         <Services />
-        <TechnologyStack />
-        <OurPartner/>
+        <TechnologyStack title={"Technology Stack"} />
+        <OurPartner />
         <Blog />
       </div>
 
@@ -41,7 +43,6 @@ const Home = () => {
       <Testimonial />
       <ServicesSlide />
       <Blog /> */}
-
 
       <ContactUs />
     </div>

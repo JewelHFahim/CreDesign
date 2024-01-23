@@ -1,4 +1,3 @@
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -43,3 +42,31 @@ img {
 	grid-column: span 2;
 	grid-row: span 2;
 }
+
+@media only screen and (max-width: 600px) {
+	.grid-wrapper > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	
+	.grid-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-auto-rows: 200px;
+	}
+
+	.grid-wrapper .wide {
+		grid-column: span 1;
+	}
+	
+	.grid-wrapper .tall {
+		grid-row: span 1;
+	}
+	.grid-wrapper .big {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+  }

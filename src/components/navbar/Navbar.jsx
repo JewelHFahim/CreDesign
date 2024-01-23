@@ -25,7 +25,9 @@ const Navbar = () => {
         <li> <a href="home-4">Home 4</a> </li>
       </ul>
 
-      <button className="border px-6 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium"> Contact Us </button>
+      <div className="hidden lg:block">
+        <button className="border px-6 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium"> Contact Us </button>
+      </div>
 
     </nav>
   );

@@ -5,10 +5,10 @@ const OurPartner = () => {
     <div className="mt-[50px]">
 
       <div className="flex justify-center">
-        <h1 className="text-[44px] font-medium uppercase">Our Partners</h1>
+        <h1 className="text-[30px] lg:text-[44px] font-medium uppercase">Our Partners</h1>
       </div>
 
-      <div className="py-5"> <PartnerSlider /> </div>
+      <div className="py-3 lg:py-5"> <PartnerSlider /> </div>
 
     </div>
   );

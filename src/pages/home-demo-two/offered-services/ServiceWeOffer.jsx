@@ -2,13 +2,13 @@ import "./ServicesWeOffer.css";
 
 const ServiceWeOffer = ({title}) => {
   return (
-    <div className="mt-[50px] flex flex-col justify-center items-center gap-y-8">
+    <div className="mt-[50px] flex flex-col justify-center items-center gap-y-5 lg:gap-y-8">
       
       <div className="flex flex-col justify-center items-center gap-y-4 text-center ">
-        <h1 className="text-[44px] font-medium leading-[55px] w-[65%]">
+        <h1 className="text-[30px] lg:text-[44px] font-medium leading-[35px] lg:leading-[55px] lg:w-[65%]">
          {title}
         </h1>
-        <p className="w-[65%]">
+        <p className="lg:w-[65%]">
           We take a personalized approach to creating web applications that
           perfectly align with your business objectives. From concept to
           deployment, we ensure your digital solution is as unique as your

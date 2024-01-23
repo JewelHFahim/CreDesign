@@ -24,19 +24,19 @@ const OurProcess = () => {
   ];
 
   return (
-    <div className="mt-[50px] flex flex-col justify-center items-center gap-y-8">
+    <div className="mt-[50px] flex flex-col justify-center items-center gap-y-5 lg:gap-y-8">
+
       <div className="flex flex-col justify-center items-center gap-y-4 text-center ">
-        <h1 className="text-[44px] font-medium leading-[55px] w-[65%]">
+        <h1 className="text-[30px] lg:text-[44px] font-medium leading-[40px] lg:leading-[55px] lg:w-[65%]">
           Our Proven Web App Development Process
         </h1>
-        <p className="w-[65%]">
+        <p className="lg:w-[65%]">
           We have meticulously crafted a strategic roadmap, guiding you through
           each step with precision, to maximize the potential of your project
           and ensure its success.
         </p>
       </div>
 
-      <div>
         <div className="timeline-main">
           <div className="timeline-wrap">
             {datas.map((item, i) => (
@@ -51,7 +51,7 @@ const OurProcess = () => {
             ))}
           </div>
         </div>
-      </div>
+
     </div>
   );
 };
