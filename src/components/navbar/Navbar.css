@@ -1,3 +1,4 @@
+/* Navbar.css */
 :root {
   --blue-gray-50: #eceff1;
   --blue-gray-100: #cfd8dc;
@@ -14,14 +15,12 @@
 }
 
 .navbar {
-  /* background: #fff3ea; */
   background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* All */
 .navbar-menu a {
   display: block;
   padding: 1rem 1.5rem;
@@ -34,8 +33,7 @@
   display: inline-block;
   color: black;
   background: transparent;
-  transition: background var(--transition-timing)
-      var(--transition-timing-function),
+  transition: background var(--transition-timing) var(--transition-timing-function),
     color var(--transition-timing) var(--transition-timing-function);
 }
 
@@ -66,14 +64,14 @@
   width: 13rem;
   box-shadow: 0 0.25rem 1.5rem hsla(200, 19%, 18%, 0.05);
   transition: visibility 0s var(--transition-timing-function) var(--transition-timing),
-  opacity var(--transition-timing) var(--transition-timing-function);
+    opacity var(--transition-timing) var(--transition-timing-function);
 }
 
 .navbar-menu ul a {
   color: var(--blue-gray-600);
   transition: background var(--transition-timing) var(--transition-timing-function),
-  color var(--transition-timing) var(--transition-timing-function);
-  border-bottom: .5px solid rgb(244, 242, 242);
+    color var(--transition-timing) var(--transition-timing-function);
+  border-bottom: 0.5px solid rgb(244, 242, 242);
 }
 
 .navbar-menu ul a:hover,
@@ -90,11 +88,6 @@
   position: relative;
 }
 
-/* 
-    HACK: Prevents box shadow from child dropdowns
-    from overlapping its parent dropdown
-*/
-
 .navbar-menu li.has-children > a {
   position: relative;
 }
@@ -109,7 +102,6 @@
   background: inherit;
   z-index: 999;
 }
-/* ENDHACK */
 
 .navbar-menu li:hover > ul,
 .navbar-menu li:focus-within > ul /* IE11+ only */ {
@@ -118,3 +110,10 @@
   opacity: 1;
   transition-delay: 0s;
 }
+
+/* Add this style to make sure the submenu is displayed above other elements */
+.navbar-menu ul ul {
+  z-index: 1000;
+}
+
+

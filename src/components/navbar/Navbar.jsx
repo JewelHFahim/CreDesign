@@ -1,34 +1,63 @@
-import "./Navbar.css";
-import logo from "../../assets/Logo.png";
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/Logo.png';
+import './Navbar.css';
 
 const Navbar = () => {
 
+  const navLinks = [
+    { label: 'Home', path: '/' },
+    { label: 'About', path: '#!' },
+    {
+      label: 'Services',
+      path: '#!',
+      subMenu: [
+        { label: 'Casino Software', path: '/services/1' },
+        { label: 'API Integration', path: '/services/2' },
+        { label: 'Custom Web App', path: '/services/5' },
+        { label: 'Movie Streaming', path: '/contact-us' },
+        { label: 'Movie Database', path: '/contact-us' },
+      ],
+    },
+    { label: 'Blog', path: '#!' },
+    { label: 'Contact', path: '/contact-us' },
+  ];
+
   return (
     <nav className="navbar lg:px-[120px] py-[20px]">
-
-        <img src={logo} alt="" />
+      <NavLink to="/" exact>
+        <img src={logo} alt="Logo" />
+      </NavLink>
 
       <ul className="navbar-menu">
-        <li> <a href="/">Home</a> </li>
-        <li> <a href="home-2">Home 2</a> </li>
-
-        <li className="has-children"> 
-        <a href="#!" aria-haspopup="true"> Services </a>
-          <ul aria-label="submenu"> 
-            <li> <a href="#!">Service item 1</a> </li>
-            <li> <a href="#!">Service item 3</a> </li>
-            <li> <a href="#!">Service item 4</a> </li>
-          </ul>
-        </li>
-
-        <li> <a href="home-3">Home 3</a> </li>
-        <li> <a href="home-4">Home 4</a> </li>
+        {navLinks.map((link, index) => (
+          <li key={index} className={link.subMenu ? 'has-children' : ''}>
+            {link.subMenu ? (
+              <>
+                <NavLink to={link.path} exact activeClassName="active">
+                  {link.label}
+                </NavLink>
+                <ul aria-label="submenu">
+                  {link.subMenu.map((subLink, subIndex) => (
+                    <li key={subIndex}>
+                      <NavLink to={subLink.path}>{subLink.label}</NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <NavLink to={link.path} exact activeClassName="active">
+                {link.label}
+              </NavLink>
+            )}
+          </li>
+        ))}
       </ul>
 
       <div className="hidden lg:block">
-        <button className="border px-6 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium"> Contact Us </button>
+        <button className="border px-6 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium">
+          Contact Us
+        </button>
       </div>
-
     </nav>
   );
 };

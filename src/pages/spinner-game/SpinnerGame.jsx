@@ -1,8 +1,9 @@
 import img1 from "../../assets/spin.png";
+import FAQSec from "../../components/faq/FAQSec";
 import TechnologyStack from "../home/technology-stack/TechnologyStack";
 import SpinerVideoSec from "./vedio-section/SpinerVideoSec";
 
-const HomeDemoFour = () => {
+const SpinnerGame = () => {
   
   return (
     <div className="bg-[#F6F6F6] pb-[50px] px-10 lg:px-[120px]">
@@ -31,8 +32,10 @@ const HomeDemoFour = () => {
       <TechnologyStack title={"Development Technology "} />
       <SpinerVideoSec />
 
+      <FAQSec/>
+
     </div>
   );
 };
 
-export default HomeDemoFour;
+export default SpinnerGame;

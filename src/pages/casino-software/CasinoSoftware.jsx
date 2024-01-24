@@ -1,10 +1,10 @@
-import WelcomeSection from "../home-demo-two/WelcomeSection";
-import ServiceWeOffer from "../home-demo-two/offered-services/ServiceWeOffer";
+import FAQSec from "../../components/faq/FAQSec";
 import TechnologyStack from "../home/technology-stack/TechnologyStack";
+import WelcomeSection from "../web-application/WelcomeSection";
+import ServiceWeOffer from "../web-application/offered-services/ServiceWeOffer";
 import GameFeatures from "./GameFeatures";
 
-const HomeDemoThree = () => {
-  
+const CasinoSoftware = () => {
   return (
     <div className="bg-[#F6F6F6] pb-[50px] px-10 lg:px-[120px]">
       <WelcomeSection
@@ -15,10 +15,11 @@ const HomeDemoThree = () => {
         width="lg:w-[80%]"
       />
       <TechnologyStack title={"TECHNOLOGY STACK"} />
-       <ServiceWeOffer title={"Online Casino game Providers"}/>
-     <GameFeatures />
+      <ServiceWeOffer title={"Online Casino game Providers"} />
+      <GameFeatures />
+      <FAQSec />
     </div>
   );
 };
 
-export default HomeDemoThree;
+export default CasinoSoftware;

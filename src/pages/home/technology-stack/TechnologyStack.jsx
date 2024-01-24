@@ -8,7 +8,7 @@ import mongodb from "../../../assets/mongodb.png";
 
 const TechnologyStack = ({title}) => {
   return (
-    <div className="mt-[50px] bg-white flex flex-col justify-center items-center lg:gap-y-5 border p-5 lg:p-8">
+    <div data-aos="zoom-in-up" data-aos-delay="50" data-aos-duration="1500" className="mt-[50px] bg-white flex flex-col justify-center items-center lg:gap-y-5 border p-5 lg:p-8">
 
       <div className="flex flex-col justify-center items-center text-center">
         <h1 className="text-[18px] lg:text-[25px] font-medium uppercase">{title}</h1>

@@ -22,7 +22,7 @@ const MainSlider = () => {
         loop={true}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="z-[-1]"
       >
         {[1, 2, 3, 4].map((item, i) => (
           <SwiperSlide key={i}>

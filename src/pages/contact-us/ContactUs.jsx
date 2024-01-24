@@ -4,7 +4,7 @@ import { FiMail } from "react-icons/fi";
 
 const ContactUs = () => {
   return (
-    <div className="px-10 lg:px-[120px] py-6 lg:py-10">
+    <div id="contact-us" className="px-10 lg:px-[120px] py-6 lg:py-10">
       <div className="flex flex-col lg:flex-row items-center">
         
         <div>

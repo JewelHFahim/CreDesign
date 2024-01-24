@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
 import UserLayout from "../layout/UserLayout";
-import HomePageTwo from "../pages/home-demo-two/HomePageTwo";
-import HomeDemoThree from "../pages/home-demo-three/HomeDemoThree";
-import HomeDemoFour from "../pages/home-demo-four/HomeDemoFour";
+import ContactUs from "../pages/contact-us/ContactUs";
+import BlogDetails from "../pages/blog/BlogDetails";
+import CasinoSoftware from "../pages/casino-software/CasinoSoftware";
+import SpinnerGame from "../pages/spinner-game/SpinnerGame";
+import WebApplication from "../pages/web-application/WebApplication";
 
 const router = createBrowserRouter([
   {
@@ -14,17 +16,29 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+
       {
-        path: "/home-2",
-        element: <HomePageTwo />,
+        path: "/services/1",
+        element: <CasinoSoftware />,
+      },
+
+      {
+        path: "/services/2",
+        element: <SpinnerGame />,
+      },
+
+      {
+        path: "/services/5",
+        element: <WebApplication />,
+      },
+
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
       },
       {
-        path: "/home-3",
-        element: <HomeDemoThree />,
-      },
-      {
-        path: "/home-4",
-        element: <HomeDemoFour />,
+        path: "/blog/:id",
+        element: <BlogDetails />,
       },
     ],
   },
