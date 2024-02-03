@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '#!' },
+    { label: 'About', path: '/about-us' },
     {
       label: 'Services',
       path: '#!',
@@ -18,12 +18,13 @@ const Navbar = () => {
         { label: 'Movie Database', path: '/contact-us' },
       ],
     },
-    { label: 'Blog', path: '#!' },
+    { label: 'Blog', path: '/blog' },
     { label: 'Contact', path: '/contact-us' },
   ];
 
   return (
-    <nav className="navbar lg:px-[120px] py-[20px]">
+    <nav className="navbar lg:px-[120px] py-[20px] border-b shadow-md">
+      
       <NavLink to="/" exact>
         <img src={logo} alt="Logo" />
       </NavLink>
@@ -36,10 +37,10 @@ const Navbar = () => {
                 <NavLink to={link.path} exact activeClassName="active">
                   {link.label}
                 </NavLink>
-                <ul aria-label="submenu">
+                <ul aria-label="submenu" className='z-[9999]'>
                   {link.subMenu.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <NavLink to={subLink.path}>{subLink.label}</NavLink>
+                      <NavLink to={subLink.path}> {subLink.label} </NavLink>
                     </li>
                   ))}
                 </ul>
@@ -54,10 +55,11 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden lg:block">
-        <button className="border px-6 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium">
+        <button className="border px-8 py-1 rounded-lg bg-orange-500 text-white text-lg font-medium">
           Contact Us
         </button>
       </div>
+
     </nav>
   );
 };

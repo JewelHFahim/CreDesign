@@ -104,7 +104,7 @@
 }
 
 .navbar-menu li:hover > ul,
-.navbar-menu li:focus-within > ul /* IE11+ only */ {
+.navbar-menu li:focus-within > ul {
   display: block;
   visibility: visible;
   opacity: 1;
@@ -112,7 +112,7 @@
 }
 
 /* Add this style to make sure the submenu is displayed above other elements */
-.navbar-menu ul ul {
+.navbar-menu ul ul{
   z-index: 1000;
 }
 

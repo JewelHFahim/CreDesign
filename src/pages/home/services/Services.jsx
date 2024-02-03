@@ -7,11 +7,11 @@ import img5 from "../../../assets/c5.png";
 import { Link } from "react-router-dom";
 
 const Services = () => {
+
   return (
-    <div className="mt-5 lg:mt-[50px] mb-8 flex flex-col justify-center items-center">
-      <h1 className="text-[30px] lg:text-[44px] text-slate-900 font-medium">
-        Our Services
-      </h1>
+    <div className="mt-5 lg:mt-[50px] mb-8 flex flex-col justify-center items-center overflow-hidden">
+
+      <h1 className="text-[30px] lg:text-[44px] text-slate-900 font-medium"> Our Services </h1>
 
       {/* Srvice 1 */}
       <div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
@@ -165,6 +165,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

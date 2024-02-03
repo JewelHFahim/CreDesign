@@ -8,7 +8,6 @@ import TechnologyStack from "./technology-stack/TechnologyStack";
 const Home = () => {
   return (
     <div>
-
       <MainSlider />
 
       <div className="px-10 lg:px-[120px]">
