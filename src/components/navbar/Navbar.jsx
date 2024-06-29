@@ -1,46 +1,45 @@
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/Logo.png';
-import './Navbar.css';
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/Logo.png";
+import "./Navbar.css";
 
 const Navbar = () => {
-
   const navLinks = [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about-us' },
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about-us" },
     {
-      label: 'Services',
-      path: '#!',
+      label: "Services",
+      path: "#!",
       subMenu: [
-        { label: 'Casino Software', path: '/services/1' },
-        { label: 'API Integration', path: '/services/2' },
-        { label: 'Custom Web App', path: '/services/5' },
-        { label: 'Movie Streaming', path: '/contact-us' },
-        { label: 'Movie Database', path: '/contact-us' },
+        { label: "Casino Software", path: "/services/1" },
+        { label: "API Integration", path: "/services/2" },
+        { label: "Custom Web App", path: "/services/5" },
+        { label: "Movie Streaming", path: "/contact-us" },
+        { label: "Movie Database", path: "/contact-us" },
+        { label: "IP Tv", path: "/ip-tv", tab: true },
       ],
     },
-    { label: 'Blog', path: '/blog' },
-    { label: 'Contact', path: '/contact-us' },
+    { label: "Blog", path: "/blog" },
+    { label: "Contact", path: "/contact-us" },
   ];
 
   return (
     <nav className="navbar lg:px-[120px] py-[20px] border-b shadow-md">
-      
       <NavLink to="/" exact>
         <img src={logo} alt="Logo" />
       </NavLink>
 
       <ul className="navbar-menu">
         {navLinks.map((link, index) => (
-          <li key={index} className={link.subMenu ? 'has-children' : ''}>
+          <li key={index} className={link.subMenu ? "has-children" : ""}>
             {link.subMenu ? (
               <>
                 <NavLink to={link.path} exact activeClassName="active">
                   {link.label}
                 </NavLink>
-                <ul aria-label="submenu" className='z-[9999]'>
+                <ul aria-label="submenu" className="z-[9999]">
                   {link.subMenu.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <NavLink to={subLink.path}> {subLink.label} </NavLink>
+                      <NavLink to={subLink.path} target={subLink?.tab && "_blank"}> {subLink.label} </NavLink>
                     </li>
                   ))}
                 </ul>
@@ -59,7 +58,6 @@ const Navbar = () => {
           Contact Us
         </button>
       </div>
-
     </nav>
   );
 };

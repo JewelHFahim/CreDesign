@@ -1,0 +1,49 @@
+.commonContainer {
+  background-size: cover;
+  background-position: center;
+}
+
+.Home {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("../../assets/call center.jpg");
+}
+
+.Subscription {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("../../assets/home top thumb.webp");
+}
+
+.ChannelList {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("../../assets/call center.jpg");
+}
+
+.ContactUs {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("../../assets/home top thumb.webp");
+}
+
+.FAQ {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("../../assets/call center.jpg");
+}

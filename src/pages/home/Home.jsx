@@ -17,19 +17,6 @@ const Home = () => {
         <Blog />
       </div>
 
-      {/* <WelcomePage />
-      <BannerPage />
-      <GSGlobalBanner />
-      <OurSoftwareSolutions />
-      <SoftwareSolutions />
-      <AboutUs />
-      <PriceList />
-      <OurServices />
-      <Experties />
-      <Portfolio />
-      <Testimonial />
-      <ServicesSlide />
-      <Blog /> */}
 
       <ContactUs />
     </div>
