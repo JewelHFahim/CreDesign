@@ -47,7 +47,7 @@ const IpTvLayout = () => {
 
   return (
     <div>
-      <div className={`w-full commonContainer ${bgClass} relative`}>
+      <div className={`w-full commonContainer ${bgClass} relative font-inter`}>
         <Navbar />
         <MainMenu />
         {route !== "/ip-tv" && <Breadcum />}

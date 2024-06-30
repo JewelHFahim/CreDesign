@@ -16,21 +16,27 @@ const MainMenu = () => {
   return (
     <div className="px-[120px] flex justify-between items-center py-6">
       <div>
-        <img src={logo} alt="" className="w-[150px] h-[35px]" />
+        <img src={logo} alt="" className="w-[200px] h-[40px]" />
       </div>
 
       <div>
         <ul>
           <li className="font-medium uppercase flex items-center gap-x-7 text-[17px]">
             {menus.map((menu, i) => (
-              <Link to={menu.url} key={i} className={`${route === menu.url ? "text-red-600" : ""}`}>{menu.name}</Link>
+              <Link
+                to={menu.url}
+                key={i}
+                className={`${route === menu.url ? "text-red-600" : ""}`}
+              >
+                {menu.name}
+              </Link>
             ))}
           </li>
         </ul>
       </div>
 
-      <button className="bg-red-600 hover:bg-blue-800 transition-all ease-in-out text-lg text-white px-10 py-2.5 rounded-full">
-        Free Trail
+      <button className="bg-red-600 hover:bg-blue-800 transition-colors duration-300 ease-in-out uppercase text-white px-10 py-3 rounded-full">
+        Free Trial
       </button>
     </div>
   );

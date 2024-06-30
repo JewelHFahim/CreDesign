@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       jost: ["Jost", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
     extend: {},
   },

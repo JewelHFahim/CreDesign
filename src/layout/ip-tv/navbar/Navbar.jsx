@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-x-3 text-red-600 text-lg">
+      <div className="flex items-center gap-x-5 text-red-600 text-lg">
         <FaFacebookF />
         <FaYoutube />
         <FaInstagram />

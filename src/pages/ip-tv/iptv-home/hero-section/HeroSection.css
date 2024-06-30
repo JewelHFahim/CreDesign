@@ -1,0 +1,12 @@
+.heroSection {
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgba(255, 0, 191, 0)
+      ),
+      url("../../../../assets/home top thumb.webp");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+  

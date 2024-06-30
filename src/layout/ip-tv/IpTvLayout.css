@@ -9,7 +9,9 @@
       rgb(255, 255, 255),
       rgba(255, 0, 191, 0)
     ),
-    url("../../assets/call center.jpg");
+    url("../../assets/home top thumb.webp");
+    background-position: top;
+
 }
 
 .Subscription {
