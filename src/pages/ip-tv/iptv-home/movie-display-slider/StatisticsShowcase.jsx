@@ -1,9 +1,12 @@
+import CountUp from 'react-countup';
+
+
 const StatisticsShowcase = () => {
   const datas = [
-    { title: "Member Active", quantity: "10K+" },
-    { title: "Happy Clients", quantity: "8K+" },
-    { title: "Professional Team", quantity: "2K+" },
-    { title: "Years Experience", quantity: "3+" },
+    { title: "Member Active", quantity: 10000 },
+    { title: "Happy Clients", quantity: 8000 },
+    { title: "Professional Team", quantity: 150 },
+    { title: "Years Experience", quantity: 10 },
   ];
 
   return (
@@ -12,7 +15,9 @@ const StatisticsShowcase = () => {
         <div key={i} className="flex items-center  h-full">
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-[60px] font-bold text-red-600">
-              {item.quantity}
+              {/* {item.quantity} */}
+
+              <CountUp start={0} end={item?.quantity} />
             </h1>
             <p className="text-[22px] font-bold">{item.title}</p>
           </div>
