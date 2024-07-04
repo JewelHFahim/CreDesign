@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useRef, useState } from "react";
 
 const FaqsCard = (props) => {
@@ -66,6 +67,7 @@ const FaqsCard = (props) => {
 };
 
 const FAQSec = () => {
+
   const faqsList = [
     {
       q: "How much time do you need for casino software?",
@@ -96,11 +98,14 @@ const FAQSec = () => {
           contact us.
         </p>
       </div>
+
       <div className="mt-14 lg:mx-20">
         {faqsList.map((item, idx) => (
           <FaqsCard key={idx} idx={idx} faqsList={item} />
         ))}
       </div>
+
+      
     </section>
   );
 };

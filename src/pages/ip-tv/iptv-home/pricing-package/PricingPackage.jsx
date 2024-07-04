@@ -3,8 +3,10 @@ import { FaWifi } from "react-icons/fa6";
 import PricingBtn from "../../../../utils/ip-tv/PricingBtn";
 import PaypalBtn from "../../../../utils/ip-tv/PaypalBtn";
 import CryptoBtn from "../../../../utils/ip-tv/CryptoBtn";
+import CreditCard from "../../../../utils/ip-tv/CreditCard";
 
 const PricingPackage = () => {
+
   const datas = [
     { title: "+30K Worldwide Channels" },
     { title: "+95,000 VODs & Series." },
@@ -22,76 +24,81 @@ const PricingPackage = () => {
       facilities: datas,
       trailBtn: true,
       paypalBtn: false,
+      creditCard: false,
       cryptoBtn: false,
       moneyBack: false,
       bgColor: "",
-      textColor: "text-black"
+      textColor: "text-black",
     },
     {
       name: "Simple Package",
       duration: "1 Monoth",
       price: "16,99 $",
       facilities: datas,
-      trailBtn: true,
+      trailBtn: false,
+      creditCard: true,
       paypalBtn: true,
       cryptoBtn: true,
       moneyBack: true,
       bgColor: "",
-      textColor: "text-black"
+      textColor: "text-black",
     },
     {
       name: "Basic Package",
       duration: "3 Monoth",
       price: "35,99 $",
       facilities: datas,
-      trailBtn: true,
+      trailBtn: false,
+      creditCard: true,
       paypalBtn: true,
       cryptoBtn: true,
       moneyBack: true,
       bgColor: "",
-      textColor: "text-black"
+      textColor: "text-black",
     },
     {
       name: "Premium Package",
       duration: "6 Months",
       price: "46,99 $",
       facilities: datas,
-      trailBtn: true,
+      trailBtn: false,
+      creditCard: true,
       paypalBtn: true,
       cryptoBtn: true,
       moneyBack: true,
-      bgColor: "bg-black",
-      textColor: "text-white"
+      bgColor: "bg-slate-900",
+      textColor: "text-white",
     },
     {
       name: "Luxury Package",
       duration: "12 Months",
       price: "63,99 $",
       facilities: datas,
-      trailBtn: true,
+      trailBtn: false,
+      creditCard: true,
       paypalBtn: true,
       cryptoBtn: true,
       moneyBack: true,
-      bgColor: "bg-black",
-      textColor: "text-white"
+      bgColor: "bg-slate-900",
+      textColor: "text-white",
     },
     {
       name: "Platinuim Package",
       duration: "24 Months",
       price: "99,99 $",
       facilities: datas,
-      trailBtn: true,
+      trailBtn: false,
+      creditCard: true,
       paypalBtn: true,
       cryptoBtn: true,
       moneyBack: true,
-      bgColor: "bg-black",
-      textColor: "text-white"
+      bgColor: "bg-slate-900",
+      textColor: "text-white",
     },
   ];
 
   return (
     <div className="px-12 mt-[230px]">
-
       <div className="pb-10">
         <div className="flex flex-col justify-center items-center">
           <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
@@ -130,9 +137,10 @@ const PricingPackage = () => {
               </div>
 
               <div className="mt-10 flex flex-col gap-4">
-                {item.trailBtn && <PricingBtn></PricingBtn>}
+                {item.trailBtn && (<PricingBtn bgColor={item.bgColor}></PricingBtn>)}
                 {item.paypalBtn && <PaypalBtn></PaypalBtn>}
-                {item.cryptoBtn && <CryptoBtn></CryptoBtn>}
+                {item.creditCard && <CreditCard bgColor={item?.bgColor}/>}
+                {item.cryptoBtn && (<CryptoBtn bgColor={item?.bgColor}></CryptoBtn>)}
               </div>
 
               {item.moneyBack && (
@@ -143,6 +151,7 @@ const PricingPackage = () => {
             </div>
           ))}
         </div>
+
       </div>
     </div>
   );

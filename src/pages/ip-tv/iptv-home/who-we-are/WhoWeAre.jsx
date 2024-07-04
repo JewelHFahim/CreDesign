@@ -35,6 +35,7 @@ const WhoWeAre = () => {
             facilitate your use, and why you can enjoy the best advantages while
             enjoying our service.
           </p>
+          
 
           <div className="grid grid-cols-2 gap-5 mt-4">
             {points.map((item, i) => (

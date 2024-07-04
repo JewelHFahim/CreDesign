@@ -29,6 +29,7 @@ import Navbar from "./navbar/Navbar";
 import MainMenu from "../../components/ip-tv/main-menu/MainMenu";
 import Breadcum from "../../components/ip-tv/breadcum/Breadcum";
 import "./IpTvLayout.css";
+import IpTvFooter from "../../pages/ip-tv/iptv-footer/IpTvFooter";
 
 const IpTvLayout = () => {
   const location = useLocation();
@@ -54,7 +55,7 @@ const IpTvLayout = () => {
       </div>
 
       <Outlet />
-      <p>Footer</p>
+      <IpTvFooter />
     </div>
   );
 };

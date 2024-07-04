@@ -3,8 +3,6 @@ import { FaWhatsapp, FaWifi } from "react-icons/fa";
 import "./HeroSection.css";
 
 const HeroSection = () => {
-
-  
   return (
     <div className="commonPadding w-full heroSection">
       <div className="pt-14 w-[50%]">
