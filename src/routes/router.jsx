@@ -14,6 +14,7 @@ import ChannelList from "../pages/ip-tv/channel-list/ChannelList";
 import Subscription from "../pages/ip-tv/subscription/Subscription";
 import IpContact from "../pages/ip-tv/ip-contact/IpContact";
 import IpFaq from "../pages/ip-tv/IpFaq/IpFaq";
+import IpTvTrial from "../pages/ip-tv/iptv-trail/IpTvTrial";
 
 const router = createBrowserRouter([
   {
@@ -88,6 +89,11 @@ const router = createBrowserRouter([
       {
         path: "/ip-tv/ip-faq",
         element: <IpFaq />,
+      },
+
+      {
+        path: "/ip-tv/iptv-trail",
+        element: <IpTvTrial />,
       },
     ],
   },

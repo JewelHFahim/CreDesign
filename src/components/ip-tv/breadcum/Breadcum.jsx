@@ -13,6 +13,8 @@ const Breadcum = () => {
       ? "Contact Us"
       : route === "/ip-tv/ip-faq"
       ? "FAQ"
+      :route === "/ip-tv/iptv-trail"
+      ? "Free IPTV Trial"
       : "";
 
   return (

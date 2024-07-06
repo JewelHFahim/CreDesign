@@ -35,9 +35,11 @@ const MainMenu = () => {
         </ul>
       </div>
 
-      <button className="bg-red-600 hover:bg-blue-800 transition-colors duration-300 ease-in-out uppercase text-white px-10 py-3 rounded-full">
-        Free Trial
-      </button>
+      <Link to="/ip-tv/iptv-trail">
+        <button className="bg-red-600 hover:bg-blue-800 transition-colors duration-300 ease-in-out uppercase text-white px-10 py-3 rounded-full">
+          Free Trial
+        </button>
+      </Link>
     </div>
   );
 };
