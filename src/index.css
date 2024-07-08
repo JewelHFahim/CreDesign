@@ -9,3 +9,10 @@
 .commonPadding{
     padding: 0px 120px;
 }
+
+@media only screen and (max-width: 600px) {
+    .commonPadding{
+        padding: 0px 20px;
+    }
+    
+  }

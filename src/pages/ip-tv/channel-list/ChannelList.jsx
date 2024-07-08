@@ -195,19 +195,19 @@ const ChannelList = () => {
   };
 
   return (
-    <div className="px-[120px] pb-10">
-      <div className="mt-24 flex flex-col justify-center items-center">
+    <div className="px-[20px] lg:px-[120px] pb-10">
+      <div className="mt-16 lg:mt-24 flex flex-col justify-center items-center">
         <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
           <FaWifi className="text-xl text-red-600" />
           CHANNELS LIST
         </h3>
-        <h1 className="mt-5 text-[30px] font-bold w-2/3 text-center">
+        <h1 className="mt-5 text-[26px] lg:text-[30px] font-bold lg:w-2/3 text-center leading-tight">
           Discover Your Favorite Channels From Anywhere In The World With Our
           Extensive Selection.
         </h1>
       </div>
 
-      <div className="my-10 flex gap-x-12">
+      <div className="my-10 flex flex-col lg:flex-row gap-x-12">
         <div>
           {part1.map((item, idx) => (
             <FaqsCard

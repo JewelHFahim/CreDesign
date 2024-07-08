@@ -98,28 +98,29 @@ const Subscription = () => {
   ];
 
   return (
-    <div className="">
-      <div className="px-10">
+    <div>
+
+      <div className="px-[20px] lg:px-10">
         <div className="mt-24 flex flex-col justify-center items-center">
           <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
             <FaWifi className="text-xl text-red-600" />
             PRICING PACKAGE
           </h3>
-          <h1 className="mt-2 text-[52px] font-bold leading-tight">
+          <h1 className="mt-2 text-[40px] lg:text-[52px] text-center font-bold leading-tight">
             Choose The Right One For You
           </h1>
         </div>
 
-        <div className="mt-10 grid grid-cols-3 gap-x-5 gap-y-24">
+        <div className="mt-10 grid lg:grid-cols-3 gap-x-5 gap-y-8 lg:gap-y-24">
           {priceData.map((item, i) => (
             <div
               key={i}
-              className={`w-full h-[900px] shadow-xl hover:shadow-2xl transition-shadow duration-300 px-10 py-12 rounded-[18px] border border-slate-100 ${item.bgColor} ${item.textColor}`}
+              className={`w-full lg:h-[900px] shadow-xl hover:shadow-2xl transition-shadow duration-300 px-10 py-12 rounded-[18px] border border-slate-200 ${item.bgColor} ${item.textColor}`}
             >
               <div className="flex flex-col justify-center items-center border-b border-black border-opacity-[30%] pb-10">
-                <h2 className="text-3xl font-semibold">{item.name}</h2>
-                <h2 className="text-4xl font-bold mt-3">{item.duration}</h2>
-                <h1 className="text-5xl text-red-600 font-bold mt-4">
+                <h2 className="text-2xl lg:text-3xl font-semibold">{item.name}</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold mt-3">{item.duration}</h2>
+                <h1 className="text-4xl lg:text-5xl text-red-600 font-bold mt-4">
                   {item.price}
                 </h1>
               </div>
@@ -128,7 +129,7 @@ const Subscription = () => {
                 {datas.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-2 text-lg font-semibold"
+                    className="flex items-center gap-2 lg:text-lg font-bold"
                   >
                     <FaRegCheckCircle className="text-red-600 text-2xl" />
                     <p>{item.title}</p>
@@ -158,15 +159,15 @@ const Subscription = () => {
       </div>
 
       <div
-        className="mt-28 commonPadding bg-green-20 h-[500px] cover bg-center relative flex  justify-start items-center"
+        className="mt-28 px-[20px] lg:px-[120px] py-[50px] lg:py-0 bg-green-20 lg:h-[500px] cover bg-center relative flex  justify-start items-center"
         style={{ backgroundImage: `url('${bg}')` }}
       >
-        <div className="z-[999] text-white w-1/2">
+        <div className="z-[999] text-white lg:w-1/2">
           <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
             <FaWifi className="text-xl text-red-600" />
             PROTOIPTV
           </h3>
-          <h1 className="mt-2 text-[52px] font-bold leading-tight">
+          <h1 className="mt-2 text-[35px] lg:text-[52px] font-bold leading-tight">
             We Provide Best Quality IPTV For Many Devices
           </h1>
           <p className="mt-6 leading-loose">
@@ -180,6 +181,7 @@ const Subscription = () => {
 
         <div className="absolute top-0 left-0 w-full h-full bg-slate-950 bg-opacity-[80%]"></div>
       </div>
+      
     </div>
   );
 };

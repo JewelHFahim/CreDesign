@@ -10,3 +10,9 @@
     height: 90vh;
   }
   
+
+  @media only screen and (max-width: 600px) {
+    .heroSection {
+      height: 95vh;
+    }
+  }

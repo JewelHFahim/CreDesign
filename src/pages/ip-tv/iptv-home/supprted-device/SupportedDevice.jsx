@@ -3,7 +3,7 @@ import img1 from "../../../../assets/supported devices.png";
 
 const SupportedDevice = () => {
   return (
-    <div className="my-44 commonPadding flex flex-col justify-center items-center gap-8">
+    <div className="my-20 lg:my-44 commonPadding flex flex-col justify-center items-center gap-8">
 
       <div className="flex flex-col justify-center items-center text-center">
         <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">

@@ -39,7 +39,7 @@ const MovieSliderSection = () => {
         <MovieDisplaySlider images={images} />
       </div>
 
-      <div  className="w-full mt-[90px] z-[99]">
+      <div className="w-full mt-[90px] z-[99]">
         <StatisticsShowcase />
       </div>
 

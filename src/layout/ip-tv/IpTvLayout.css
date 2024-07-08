@@ -1,8 +1,3 @@
-.commonContainer {
-  background-size: cover;
-  background-position: center;
-}
-
 .Home {
   background-image: linear-gradient(
       to right,
@@ -10,8 +5,8 @@
       rgba(255, 0, 191, 0)
     ),
     url("../../assets/home top thumb.webp");
-    background-position: top;
-
+  background-size: cover;
+  background-position: top;
 }
 
 .Subscription {
@@ -21,6 +16,7 @@
       rgba(255, 0, 191, 0)
     ),
     url("../../assets/home top thumb.webp");
+  background-size: cover;
 }
 
 .ChannelList {
@@ -30,6 +26,7 @@
       rgba(255, 0, 191, 0)
     ),
     url("../../assets/call center.jpg");
+  background-size: cover;
 }
 
 .ContactUs {
@@ -39,6 +36,7 @@
       rgba(255, 0, 191, 0)
     ),
     url("../../assets/home top thumb.webp");
+  background-size: cover;
 }
 
 .FAQ {
@@ -48,4 +46,13 @@
       rgba(255, 0, 191, 0)
     ),
     url("../../assets/call center.jpg");
+  background-size: cover;
+}
+
+/* =======================>> Mobile Responsive <<======================== */
+@media only screen and (max-width: 600px) {
+  .Home {
+    background-size: auto;
+    background-position: top;
+  }
 }

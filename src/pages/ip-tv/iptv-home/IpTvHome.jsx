@@ -1,3 +1,4 @@
+import WhatsAppBtn from "../../../utils/ip-tv/WhatsAppBtn";
 import BestQuality from "./best-quality/BestQuality";
 import BestService from "./best-service/BestService";
 import ConnectIpTv from "./connect-iptv/ConnectIpTv";
@@ -10,7 +11,7 @@ import WhoWeAre from "./who-we-are/WhoWeAre";
 
 const IpTvHome = () => {
   return (
-    <div className="">
+    <div className="relative">
       <HeroSection />
       <ConnectIpTv />
       <WhoWeAre />
@@ -18,8 +19,9 @@ const IpTvHome = () => {
       <PricingPackage />
       <BestQuality />
       <BestService />
-      <SupportedDevice/>
-      <Testimonial/>
+      <SupportedDevice />
+      <Testimonial />
+      <WhatsAppBtn />
     </div>
   );
 };

@@ -1,35 +1,10 @@
-// import { Outlet } from "react-router-dom";
-// import Navbar from "./navbar/Navbar";
-// import MainMenu from "../../components/ip-tv/main-menu/MainMenu";
-// import Breadcum from "../../components/ip-tv/breadcum/Breadcum";
-// import img1 from "../../assets/call center.jpg";
-
-// const IpTvLayout = () => {
-//   return (
-//     <div className="border border-green-600">
-//       <div
-//         className="relative w-full h-screen bg-cover bg-center"
-//         style={{ backgroundImage: `url(${img1})` }}
-//       >
-//         <Navbar />
-//         <MainMenu />
-//         <Breadcum />
-//       </div>
-
-//       <Outlet />
-//       <p>Footer</p>
-//     </div>
-//   );
-// };
-
-// export default IpTvLayout;
-
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import MainMenu from "../../components/ip-tv/main-menu/MainMenu";
 import Breadcum from "../../components/ip-tv/breadcum/Breadcum";
 import "./IpTvLayout.css";
 import IpTvFooter from "../../pages/ip-tv/iptv-footer/IpTvFooter";
+import IpMobile from "../../components/ip-tv/iptv-mobile-menu/IpMobile";
 
 const IpTvLayout = () => {
   const location = useLocation();
@@ -48,10 +23,14 @@ const IpTvLayout = () => {
 
   return (
     <div>
-      <div className={`w-full commonContainer ${bgClass} relative font-inter`}>
-        <Navbar />
-        <MainMenu />
+      <div className={`w-full commonContainer ${bgClass} relative font-inter `}>
+        <div className="hidden lg:block ">
+          <Navbar />
+          <MainMenu />
+        </div>
+        <IpMobile />
         {route !== "/ip-tv" && <Breadcum />}
+
       </div>
 
       <Outlet />

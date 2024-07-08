@@ -38,25 +38,26 @@ const BestService = () => {
   ];
 
   return (
-    <div className="mt-28 commonPadding">
+    <div className=" mt-20 lg:mt-28 commonPaddin px-10">
       <SectionInfos
         title="OUR BEST SERVICES"
         info="Live Sport And TV-Shows For Best Friends"
+        className="text-center lg:text-left"
       >
         With our complete and large collection of TV channels, never miss your
         favorite sport games and TV shows. You can be the first one to see your
         new episode of your favorite TV series.
       </SectionInfos>
 
-      <div className="grid grid-cols-3 gap-5 mt-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-14">
         {datas.map((item, i) => (
           <div
             key={i}
-            className="border border-slate-100 w-full h-[350px] rounded-[15px] shadow-lg hover:shadow-2xl transition-all duration-300 bg-white flex flex-col items-center justify-center p-5 text-center gap-5"
+            className="border border-slate-200 w-full lg:h-[350px] rounded-[15px] shadow-lg hover:shadow-2xl transition-all duration-300 bg-white flex flex-col items-center justify-center px-5 py-14 lg:px-5 lg:py-5 text-center gap-5"
           >
-            <div className="text-red-600 text-6xl">{item.icon}</div>
+            <div className="text-red-600 text-5xl lg:text-6xl">{item.icon}</div>
 
-            <h2 className="text-3xl font-semibold">{item.title}</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold">{item.title}</h2>
 
             <p className="leading-loose">{item.des}</p>
           </div>

@@ -2,13 +2,13 @@ import { FaWifi } from "react-icons/fa";
 
 const IpTvTrial = () => {
   return (
-    <div className="px-[120px] mt-[100px] mb-10">
+    <div className=" px-[20px] lg:px-[120px] pt-[60px] lg:mt-[100px] mb-10">
       <div className="">
         <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
           <FaWifi className="text-xl text-red-600" />
           REQUEST AN IPTV TRIAL
         </h3>
-        <h1 className="mt-2 text-[52px] font-bold leading-tight">
+        <h1 className="mt-2 text-[29px] lg:text-[52px] font-bold leading-tight">
           Evaluating An IPTV Service Before Paying For It Is Any Client&apos;s
           Right.
         </h1>
@@ -20,7 +20,7 @@ const IpTvTrial = () => {
 
       <form className="mt-10 border rounded-[18px] shadow-xl px-5 py-10 flex flex-col gap-8">
         {/* ==========================>> Name and Email <<============================ */}
-        <div className="flex w-full gap-5">
+        <div className="flex flex-col lg:flex-row  w-full gap-5">
           <div className="flex flex-col w-full">
             <label className="text-lg font-medium">Name</label>
             <input
@@ -45,19 +45,19 @@ const IpTvTrial = () => {
         <div className="flex gap-5">
           <div className="flex flex-col w-full">
             <label className="text-lg font-medium">Country</label>
-            <select className="border w-full py-2 px-4 focus:outline-blue-500">
-              <option hidden>Country</option>
+            <select className="border w-full py-2 px-4 overflow-hidden focus:outline-blue-500">
+              <option hidden> Country </option>
               <option>BD</option>
               <option>UK</option>
               <option>USA</option>
             </select>
           </div>
 
-          <div className="w-full"></div>
+          <div className="w-full hidden lg:block"></div>
         </div>
 
         {/* ==================>> Device and Application Select <<===================== */}
-        <div className="flex w-full gap-5">
+        <div className="flex flex-col lg:flex-row  w-full gap-5">
           <div className="flex flex-col w-full">
             <label className="text-lg font-medium">Country</label>
             <select className="border w-full py-2 px-4 focus:outline-blue-500">
@@ -69,7 +69,7 @@ const IpTvTrial = () => {
 
           <div className="flex flex-col w-full">
             <label className="text-lg font-medium">IpTv Application</label>
-            <select className="border w-full py-2 px-4 focus:outline-blue-500">
+            <select className="border w-full py-2 px-4 focus:outline-blue-500 overflow-hidden">
               <option>Android Box</option>
               <option>Apple Tv</option>
               <option>Smart Tv</option>
@@ -119,7 +119,7 @@ const IpTvTrial = () => {
           <label className="text-lg font-medium">Single Line Text</label>
           <input
             type="text"
-            className="w-1/2 py-2 px-5 border focus:outline-blue-500"
+            className="lg:w-1/2 py-2 px-5 border focus:outline-blue-500"
           />
         </div>
 
@@ -138,7 +138,7 @@ const IpTvTrial = () => {
 
       <div className="mt-14">
         <div>
-          <h3 className="text-gray-600 font-semibold text-lg">
+          <h3 className="text-gray-600 font-semibold lg:text-lg">
             Discover a new realm of entertainment with our exclusive 24-hour
             <span className="text-red-600"> IPTV </span> free trial. Experience
             the future of television on your terms. Start your trial today!
@@ -165,7 +165,7 @@ const IpTvTrial = () => {
         </p>
 
         <div className="my-7">
-          <h1 className="my-5 text-4xl font-[600]">
+          <h1 className="my-5 text-3xl lg:text-4xl font-[700]">
             Step 1: Download The IPTV App
           </h1>
           <p className="text-gray-400 mt-5">
@@ -176,7 +176,7 @@ const IpTvTrial = () => {
         </div>
 
         <div className="my-7">
-          <h1 className="my-5 text-4xl font-[600]">
+          <h1 className="my-5 text-3xl lg:text-4xl font-[700]">
             Step 2: Obtain A
             <span className="text-red-600 pl-2">Free IPTV Trial Code</span>
           </h1>
@@ -188,7 +188,7 @@ const IpTvTrial = () => {
         </div>
 
         <div className="my-7">
-          <h1 className="my-5 text-4xl font-[600]">
+          <h1 className="my-5 text-3xl lg:text-4xl font-[700]">
             Step 3: Activate Your IPTV Trial Code
           </h1>
           <p className="text-gray-400 mt-5">
@@ -199,7 +199,7 @@ const IpTvTrial = () => {
         </div>
 
         <div className="my-7">
-          <h1 className="my-5 text-4xl font-[600]">
+          <h1 className="my-5 text-3xl lg:text-4xl font-[700]">
             Step 4: Select
             <span className="text-red-600 pl-2">A Paid IPTV Plan</span>
           </h1>
@@ -288,7 +288,7 @@ const IpTvTrial = () => {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-5xl font-semibold text-red-600">
+          <h1 className="text-4xl lg:text-5xl font-semibold text-red-600">
             Subscription Plans
           </h1>
 
@@ -331,12 +331,12 @@ const IpTvTrial = () => {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-5xl font-semibold">
+          <h1 className="text-3xl lg:text-5xl font-bold">
             Frequently Asked Questions About Our IPTV Free Trial
           </h1>
 
           <div className="mt-8">
-            <h2 className="text-3xl font-semibold">
+            <h2 className="text-2xl lg:text-3xl font-semibold">
               What is the difference between an unpaid subscription code and a
               paid subscription code?
             </h2>
@@ -358,7 +358,7 @@ const IpTvTrial = () => {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-2xl lg:text-3xl font-semibold">
             Why might the subscription code not work?
           </h1>
 
@@ -430,7 +430,9 @@ const IpTvTrial = () => {
         </div>
 
         <div className="mt-8">
-          <h1 className="text-3xl font-semibold">What is your IPTV code?</h1>
+          <h1 className="text-2xl lg:text-3xl font-semibold">
+            What is your IPTV code?
+          </h1>
 
           <div className="text-gray-400 mt-5 flex flex-col gap-2">
             <li>What is your IPTV code?</li>

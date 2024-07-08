@@ -1,5 +1,10 @@
 import { FaStar, FaWifi } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import TestimonialSlider from "./TestimonialSlider";
 import img1 from "../../../../assets/testimonial-1.png";
+
 
 const Testimonial = () => {
   return (
@@ -9,16 +14,16 @@ const Testimonial = () => {
           <FaWifi className="text-xl text-red-600" />
           TESTIMONIAL
         </h3>
-        <h1 className="mt-2 text-[52px] font-bold leading-tight">
+        <h1 className="mt-2 text-[35px] lg:text-[52px] text-center font-bold leading-tight">
           What Our Clients Say
         </h1>
       </div>
 
-      <div className="mt-10 grid grid-cols-3 gap-5">
+      <div className="mt-10 hidden lg:grid lg:grid-cols-3 gap-5">
         {Array.from({ length: 3 }).map((item, i) => (
           <div
             key={i}
-            className="border-2 border-slate-200 rounded-[15px] shadow-lg h-[350px] p-8"
+            className="border-2 border-slate-200 rounded-[15px] shadow-lg lg:h-[350px] p-8"
           >
             <div className="flex items-center gap-3 text-xl text-yellow-500">
               <FaStar />
@@ -42,6 +47,9 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
+     <div className="lg:hidden">
+     <TestimonialSlider />
+     </div>
     </div>
   );
 };

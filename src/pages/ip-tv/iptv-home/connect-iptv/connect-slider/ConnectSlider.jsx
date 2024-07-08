@@ -14,7 +14,49 @@ import img8 from "../../../../../assets/firetv.png";
 import img9 from "../../../../../assets/cnn.png";
 import img10 from "../../../../../assets/cannal.png";
 
-const ConnectSlider = () => {
+// const ConnectSlider = () => {
+//   const images = [
+//     { img: img1 },
+//     { img: img2 },
+//     { img: img3 },
+//     { img: img4 },
+//     { img: img5 },
+//     { img: img6 },
+//     { img: img7 },
+//     { img: img8 },
+//     { img: img9 },
+//     { img: img10 },
+//   ];
+
+//   return (
+//     <>
+//       <Swiper
+//         spaceBetween={30}
+//         centeredSlides={true}
+//         slidesPerView={7}
+//         loop={true}
+//         autoplay={{
+//           delay: 2500,
+//           disableOnInteraction: false,
+//         }}
+//         pagination={false}
+//         navigation={false}
+//         modules={[Autoplay, Pagination, Navigation]}
+//         className="mySwiper mt-16"
+//       >
+//         {images?.map((item, i) => (
+//           <SwiperSlide key={i}>
+//             <img src={item?.img} alt="" className="w-[200px]" />
+//           </SwiperSlide>
+//         ))}
+//       </Swiper>
+//     </>
+//   );
+// };
+
+// export default ConnectSlider;
+
+export default function ConnectSlider() {
   const images = [
     { img: img1 },
     { img: img2 },
@@ -31,18 +73,30 @@ const ConnectSlider = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        slidesPerView={7}
+        slidesPerView={4}
+        spaceBetween={10}
+        pagination={false}
+        navigation={false}
         loop={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
         }}
-        pagination={false}
-        navigation={false}
+        breakpoints={{
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 7,
+            spaceBetween: 50,
+          },
+        }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper mt-16"
+        className="mt-16"
       >
         {images?.map((item, i) => (
           <SwiperSlide key={i}>
@@ -52,6 +106,4 @@ const ConnectSlider = () => {
       </Swiper>
     </>
   );
-};
-
-export default ConnectSlider;
+}

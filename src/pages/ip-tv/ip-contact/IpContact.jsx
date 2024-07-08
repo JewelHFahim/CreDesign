@@ -36,13 +36,13 @@ const IpContact = () => {
 
   return (
     <div className=" bg-gray-50">
-      <div className="pt-24 px-[120px] flex ">
-        <div className="w-[55%] pr-8">
+      <div className="pt-24 px-[20px] lg:px-[120px] flex flex-col lg:flex-row gap-8">
+        <div className="lg:w-[55%] pr-8">
           <h3 className="flex items-center gap-2 tracking-widest uppercase font-bold">
             <FaWifi className="text-xl text-red-600" />
             REQUEST AN IPTV TRIAL
           </h3>
-          <h1 className="mt-2 text-[52px] font-bold leading-tight">
+          <h1 className="mt-2 text-[38px] lg:text-[52px] font-bold leading-tight">
             Let&apos;s Start Talking With Our Staff To Help You
           </h1>
           <p className="mt-8 w-[90%] leading-loose">
@@ -51,7 +51,7 @@ const IpContact = () => {
           </p>
         </div>
 
-        <div className=" w-[45%]">
+        <div className="lg:w-[45%]">
           <h2 className="text-3xl font-bold">Please Fill Out The Form Below</h2>
 
           <form className="mt-5 bg-white shadow-xl flex flex-col gap-5 px-6 py-10">
@@ -79,21 +79,25 @@ const IpContact = () => {
         </div>
       </div>
 
-      <div className="mt-28 bg-gray-100 px-[120px] py-20 text-center">
+      <div className="mt-12 lg:mt-28 bg-gray-100 px-[20px] lg:px-[120px] py-20 text-center">
         <SectionInfos title="GET IN TOUCH" info="Let's Start Talking With Us">
           Our Support work 24/24 and 7/7 to receive your ticket and help you for
           all your problems and all your questions.
         </SectionInfos>
 
-        <div className="grid grid-cols-3 gap-5 mt-14">
+        <div className="grid lg:grid-cols-3 gap-5 mt-14">
           {datas.map((item, i) => (
             <div
               key={i}
               className="border border-slate-100 w-full h-[320px] rounded-[15px] shadow-lg hover:shadow-2xl transition-all duration-300 bg-white flex flex-col items-center justify-center p-5 text-center gap-5"
             >
-              <div className="text-red-600 text-6xl">{item.icon}</div>
+              <div className="text-red-600 text-4xl lg:text-6xl">
+                {item.icon}
+              </div>
 
-              <h2 className="text-3xl font-semibold">{item.title}</h2>
+              <h2 className="text-2xl lg:text-3xl font-semibold">
+                {item.title}
+              </h2>
 
               <p className="leading-loose">{item.des}</p>
             </div>
@@ -101,7 +105,7 @@ const IpContact = () => {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <div style={{ height: "55vh", width: "100%" }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: "" }}
