@@ -124,6 +124,7 @@ const MobileMenu = () => {
     { name: "Custom Web App", href: "/services/5", icon: "" },
     { name: "Movie Streaming", href: "/contact-us", icon: "" },
     { name: "Movie Database", href: "/contact-us", icon: "" },
+    { name: "IpTv", href: "/ip-tv", icon: "" },
   ];
 
   return (
@@ -155,7 +156,7 @@ const MobileMenu = () => {
             </div>
 
             <div className="overflow-auto">
-              <ul className="text-sm font-medium flex-1">
+              <ul className="text-base font-medium flex-1">
                 {navigation.map((item, idx) => (
                   <li key={idx}>
                     <a

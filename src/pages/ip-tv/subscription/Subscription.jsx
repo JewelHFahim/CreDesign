@@ -5,6 +5,7 @@ import CreditCard from "../../../utils/ip-tv/CreditCard";
 import CryptoBtn from "../../../utils/ip-tv/CryptoBtn";
 import TrailButton from "../../../utils/ip-tv/TrailButton";
 import bg from "../../../assets/home top thumb.webp";
+import ContactWhatsApp from "../../../utils/ip-tv/ContactWhatsApp";
 
 const Subscription = () => {
   const datas = [
@@ -137,7 +138,7 @@ const Subscription = () => {
                 ))}
               </div>
 
-              <div className="mt-10 flex flex-col gap-4">
+              {/* <div className="mt-10 flex flex-col gap-4">
                 {item.trailBtn && (
                   <PricingBtn bgColor={item.bgColor}></PricingBtn>
                 )}
@@ -146,13 +147,17 @@ const Subscription = () => {
                 {item.cryptoBtn && (
                   <CryptoBtn bgColor={item?.bgColor}></CryptoBtn>
                 )}
+              </div> */}
+
+              <div className="mt-10">
+                <ContactWhatsApp/>
               </div>
 
-              {item.moneyBack && (
+              {/* {item.moneyBack && (
                 <p className="mt-5 text-center font-medium">
                   7 Days Money-Back Guarantee
                 </p>
-              )}
+              )} */}
             </div>
           ))}
         </div>

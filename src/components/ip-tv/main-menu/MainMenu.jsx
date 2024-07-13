@@ -15,9 +15,9 @@ const MainMenu = () => {
 
   return (
     <div className="px-[120px] flex justify-between items-center py-6">
-      <div>
+      <Link to="/ip-tv">
         <img src={logo} alt="" className="w-[200px] h-[40px]" />
-      </div>
+      </Link>
 
       <div>
         <ul>
