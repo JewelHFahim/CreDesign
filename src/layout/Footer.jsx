@@ -60,7 +60,7 @@ const Footer = () => {
 
             <div className="px-10 lg:px-[120px] py-5 lg:py-[40px] text-white flex flex-col lg:flex-row justify-between items-center gap-y-2 lg:gapy-0">
                 <p>All rights reserved © 2023 Credesign</p>
-                <p>Developed By <span className="text-orange-500">CloudySign</span>.</p>
+                <p>Developed By <span className="text-orange-500">CreDesign</span>.</p>
             </div>
         </div>
     );
