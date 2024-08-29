@@ -49,11 +49,19 @@ const MainSlider = () => {
       >
         {images.map((item, i) => (
           <SwiperSlide key={i}>
-            <div className="w-full lg:h-[450px] flex justify-start items-center bg-opacity-30 px-20" style={{backgroundImage: `url(${item.img})`, backgroundPosition: "center", backgroundSize: "cover"}}>
-              <div className="flex flex-col gap-4">
-                <p className="text-3xl font-semibold text-white">{item.title}</p>
-                <h1 className="text-5xl font-semibold text-orange-600 max-w-[750px]">{item.des}</h1>
+            <div
+              className="w-full h-[250px] lg:h-[450px] flex justify-start items-center lg:bg-opacity-30 lg:px-20 lg:bg-cover bg-right lg:bg-center relative "
+              style={{ backgroundImage: `url(${item.img})` }}
+            >
+              <div className="flex flex-col gap-2 lg:gap-4 w-full z-10 mx-4 lg:mx-0 uppercase">
+                <p className="text-lg lg:text-3xl font-semibold text-white lg:max-w-[750px]">
+                  {item.title}
+                </p>
+                <h1 className="text-xl lg:text-5xl font-semibold text-orange-600 w-full lg:max-w-[750px]">
+                  {item.des}
+                </h1>
               </div>
+              <div className="w-full h-full bg-black absolute bg-opacity-[50%] lg:bg-opacity-[0%] z-0"></div>
             </div>
           </SwiperSlide>
         ))}

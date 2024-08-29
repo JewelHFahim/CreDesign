@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I developed a responsive casino blog and service details app using a modern tech stack, including React, Tailwind, Swiper, Google-Map-React, React-CountUp, React-Type-Animation, Redux, React Router, and React Icons. The app provides an engaging user experience with dynamic content presentation, smooth animations, and interactive features. It integrates Google Maps for location details, utilizes Redux for state management, and offers a seamless navigation experience. The app is designed to be fully responsive, ensuring optimal performance across all devices.
